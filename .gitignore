@@ -1,0 +1,36 @@
+# IDE / System files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Node / Frontend
+node_modules/
+/client/node_modules/
+/client/dist/
+/client/dist-ssr/
+/client/*.local
+/client/.oxlintrc.json
+
+# Java / Maven Backend
+target/
+/server/target/
+*.class
+*.blue
+*.db
+/server/.mvn/wrapper/maven-wrapper.jar
+
+# Secrets & Environment variables
+.env
+.env*.local
+application-local.properties
+application-local.yaml
