@@ -150,7 +150,7 @@ Once running, you can access the Swagger-UI page at:
 
 ## 🐳 Docker Hub CI/CD
 
-The repository includes a GitHub Actions workflow that builds and pushes both images to Docker Hub on every push to `main` and on manual dispatch.
+The repository includes a GitHub Actions workflow at [.github/workflows/dockerhub-cicd.yml](.github/workflows/dockerhub-cicd.yml) that builds and pushes both images to Docker Hub on every push to `main` and on manual dispatch.
 
 Create these GitHub repository secrets before enabling the workflow:
 
@@ -159,8 +159,12 @@ Create these GitHub repository secrets before enabling the workflow:
 
 The workflow publishes these image names:
 
-* `DOCKERHUB_USERNAME/inventoryhub-client`
-* `DOCKERHUB_USERNAME/inventoryhub-server`
+* `DOCKERHUB_USERNAME/inventoryhub-client:latest`
+* `DOCKERHUB_USERNAME/inventoryhub-client:<commit-sha>`
+* `DOCKERHUB_USERNAME/inventoryhub-server:latest`
+* `DOCKERHUB_USERNAME/inventoryhub-server:<commit-sha>`
+
+The frontend reads its API URL from [client/.env](client/.env), which currently points to `http://localhost:8080` for local development.
 
 ---
 
