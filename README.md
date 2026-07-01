@@ -224,10 +224,14 @@ To transition this monolithic architecture into a distributed microservice syste
 
 ---
 
-## 📸 Screenshots Placeholders
+## 📸 Screenshots
 
-*Include screenshot mockups representing pages in client interface:*
-1. **[Screenshot] Login Interface** (Deep-blue glassmorphic card)
-2. **[Screenshot] Developer Sign-Up Form** (Password validations and Role Dropdown)
-3. **[Screenshot] Dashboard Metrics Page** (Product Count, Total Value Cards)
-4. **[Screenshot] Products Grid** (Interactive table with Add/Edit/Delete actions)
+*Screenshots from the frontend are stored in `client/public/ss` and rendered below:*
+
+| Login | Sign Up |
+|---|---|
+| ![Login Interface](client/public/ss/login.png) | ![Developer Sign-Up Form](client/public/ss/signup.png) |
+
+| Dashboard | Products Grid |
+|---|---|
+| ![Dashboard Metrics Page](client/public/ss/Dashboard%20Metrics%20Page.png) | ![Products Grid](client/public/ss/product%20grid.png) |
