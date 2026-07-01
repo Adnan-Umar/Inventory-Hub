@@ -148,6 +148,22 @@ Once running, you can access the Swagger-UI page at:
 
 ---
 
+## 🐳 Docker Hub CI/CD
+
+The repository includes a GitHub Actions workflow that builds and pushes both images to Docker Hub on every push to `main` and on manual dispatch.
+
+Create these GitHub repository secrets before enabling the workflow:
+
+* `DOCKERHUB_USERNAME`
+* `DOCKERHUB_TOKEN`
+
+The workflow publishes these image names:
+
+* `DOCKERHUB_USERNAME/inventoryhub-client`
+* `DOCKERHUB_USERNAME/inventoryhub-server`
+
+---
+
 ## 👥 Seeded Test Credentials
 
 During backend startup, the database is auto-seeded with test users. You can sign in using:
